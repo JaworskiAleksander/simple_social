@@ -122,3 +122,10 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIR = [os.path.join(BASE_DIR,'static')]
+
+try:
+    from .local_settings import *
+    print('local_settings.py imported properly')
+except ImportError:
+    print('ImportError has occured')
+    pass
