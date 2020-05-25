@@ -5,3 +5,6 @@ from django.contrib.auth import get_user_model
 # handles everything that's needed to create user
 # auth.models.User is created properly with this thing
 from django.contrib.auth.forms import UserCreationForm
+
+class UserCreateForm(UserCreationForm):
+    pass
