@@ -14,3 +14,9 @@
 + learn a lot more about debugging
 + once this project is ready to launch, it'll be time to move TDD with python 3.8 and django 3.x
 + ETA - 6 days from the moment of project initialization
++ Toolbox
+    + VS Code
+    + git command-line
+    + github.com as DVCS
+    + OHV vps for running live version
+    + postgres database engine, added later, connection details stored in local_settings, not available for outside view - security matters
