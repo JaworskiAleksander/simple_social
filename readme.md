@@ -4,3 +4,13 @@
 + Posts in groups - similar to a tweet
 + Linking user profiles with '@' symbol
 + Multiple applications within project
+
+# Work log
+
+
+
+# Side notes
++ this time, I'm building one application at a time
++ learn a lot more about debugging
++ once this project is ready to launch, it'll be time to move TDD with python 3.8 and django 3.x
++ ETA - 6 days from the moment of project initialization
