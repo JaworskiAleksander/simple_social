@@ -14,6 +14,8 @@
 + learn a lot more about debugging
 + once this project is ready to launch, it'll be time to move TDD with python 3.8 and django 3.x
 + ETA - 6 days from the moment of project initialization
++ no need for branches, as this project will be created in one, straight process
++ no team-work or collaboration, thus git history will be relatively simple
 + Toolbox
     + VS Code
     + git command-line
