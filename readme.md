@@ -22,3 +22,4 @@
     + github.com as DVCS
     + OHV vps for running live version
     + postgres database engine, added later, connection details stored in local_settings, not available for outside view - security matters
++ django-bootstrap4 added to libraries
