@@ -30,7 +30,7 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-                <ul class="navbar-nav navbar-right">
+                <ul class="navbar-nav justify-content-end">
                     {% if user.is_authenticated %}
                     <li class="nav-item">
                         <a class="nav-link btn btn-outline-secondary" href="#">Post!</a>
@@ -45,7 +45,15 @@
                         <a class="nav-link btn btn-outline-danger" href="{% url 'accounts:logout' %}">Log Out</a>
                     </li>
                     {% else %}
-
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-secondary" href="#">Groups</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-secondary" href="#">Log In</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-secondary" href="#">Sign Up</a>
+                    </li>
                     {% endif%}
 
 
