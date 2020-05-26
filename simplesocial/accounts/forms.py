@@ -13,11 +13,11 @@ class UserCreateForm(UserCreationForm):
         # https://docs.djangoproject.com/en/3.0/ref/contrib/auth/
         # under User model description
         # https://docs.djangoproject.com/en/1.8/_modules/django/contrib/auth/forms/
-        fields = ('username', 'email', 'password1', 'password2')
         model = get_user_model()
+        fields = ('username', 'email', 'password1', 'password2')
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         # customization labels
-        self.fields['username'] = 'Display Name'
-        self.fields['email'] = 'Email Address'
+        self.fields['username'].label = 'Display Name'
+        self.fields['email'].label = 'Email Address'
