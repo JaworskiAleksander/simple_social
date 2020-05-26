@@ -32,7 +32,18 @@
             </button>
                 <ul class="navbar-nav navbar-right">
                     {% if user.is_authenticated %}
-
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-secondary" href="#">Post!</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-secondary" href="#">Groups</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-secondary" href="#">Create Group</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-danger" href="#">Log Out</a>
+                    </li>
                     {% else %}
 
                     {% endif%}
