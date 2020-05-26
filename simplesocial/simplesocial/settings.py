@@ -124,6 +124,10 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIR = [os.path.join(BASE_DIR,'static')]
 
+LOGIN_REDIRECT_URL = 'test'
+LOGOUT_REDIRECT_URL = 'thanks'
+
+
 try:
     from .local_settings import *
     print('local_settings.py imported properly')
