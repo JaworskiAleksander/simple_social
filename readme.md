@@ -23,3 +23,4 @@
     + OHV vps for running live version
     + postgres database engine, added later, connection details stored in local_settings, not available for outside view - security matters
 + django-bootstrap4 added to libraries
+    + [Link to pypi project page](https://pypi.org/project/django-bootstrap4/)
