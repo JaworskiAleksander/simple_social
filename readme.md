@@ -6,7 +6,7 @@
 + Multiple applications within project
 
 # Work log
-
++ reading commit history will give you an outline of how this project was created
 
 
 # Side notes
