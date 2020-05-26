@@ -14,4 +14,4 @@ class SignUp(CreateView):
     # once someone has successfuly singed up, send them to page that's under 'login' alias name
     # reverse_lazy is executed AFTER submit button is pressed
     success_url = reverse_lazy('login')
-    template_name = 'acounts/signup.html'
+    template_name = 'accounts/signup.html'
