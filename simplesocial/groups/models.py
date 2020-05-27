@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse
 # use slugify to remove any non-alphanumeric characters
 # lowercase and add dashes instead of whitespaced
 from django.utils.text import slugify
