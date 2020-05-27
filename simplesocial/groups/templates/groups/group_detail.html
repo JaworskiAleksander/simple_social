@@ -1,3 +1,6 @@
 {% extends 'groups/group_base.html' %}
 {% block pregroup %}
+<h2>{{ group.name }}</h2>
+<hr>
+<h4>Member Count: {{ group.members.count }}</h4>
 {% endblock %}
