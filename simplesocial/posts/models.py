@@ -24,7 +24,10 @@ class Post(models.Model):
         return self.message
 
     # save()
-
+    def save(self, *args, **kwargs):
+        # when someone writes with markdown or posts a link, it'll be formatted properly
+        self.message_html = misaka.html(self.message)
+        super().save(*args, **kwargs)
 
     # get_absolute_url - where to redirect user once a post has been sent successfuly
     pass
