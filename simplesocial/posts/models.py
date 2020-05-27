@@ -12,4 +12,14 @@ User = get_user_model()
 # Create your models here.
 
 class Post(models.Model):
+    # attributes
+
+
+    # string representation
+
+
+    # save()
+
+
+    # get_absolute_url - where to redirect user once a post has been sent successfuly
     pass
