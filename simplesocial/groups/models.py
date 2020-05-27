@@ -35,6 +35,9 @@ class Group(models.Model):
 
     def get_absolute_url(self):
         return reverse("groups:single", kwargs={"pk": self.pk, 'slug': self.slug})
+
+    class Meta:
+        ordering = ['name']
     
 
 class GroupMember(models.Model):
