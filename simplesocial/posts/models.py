@@ -20,7 +20,8 @@ class Post(models.Model):
     group = models.ForeignKey(Group, related_name='posts', null=True, blank=True)
 
     # string representation
-
+    def __str__(self):
+        return self.message
 
     # save()
 
