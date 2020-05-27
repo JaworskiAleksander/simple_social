@@ -16,4 +16,7 @@ class CreateGroup(LoginRequiredMixin, CreateView):
     model = Group
 
 class SingleGroup(DetailView):
-    pass
+    model = Group
+
+class ListGroup(ListView):
+    model = Group
