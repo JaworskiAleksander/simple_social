@@ -25,6 +25,13 @@ class Group(models.Model):
     def __str__(self):
         return self.name
 
+    def save(self, *args, **kwargs):
+        # remove non-alphanumeric symbols, lowercase everything, put dashes instead of whitespaces
+        self.slug = slugify(self.name)
+        # in case we have a markdown group description:
+        self.description_html = misaka.html(self.description)
+        super().save(*args, **kwargs)
+
 class GroupMember(models.Model):
     group = models.ForeignKey(Group, related_name='memberships', on_delete=models.CASCADE)
     user = models.ForeignKey(User, related_name='user_groups', on_delete=models.CASCADE)
