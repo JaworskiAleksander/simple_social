@@ -26,6 +26,7 @@
     + [Link to pypi project page](https://pypi.org/project/django-bootstrap4/)
 + code formatting and readability improvement via
     + applying pep8-compliant vscode plugin -> autopep8, black or yapf, still in test
+    `$ autopep8 --in-place --aggressive --aggressive <filename>`
     + sing f-strings formatting
     + SOLID/DRY/Clean Code rules
     + refactoring for loops on lists to list comprehensions or mapping function
