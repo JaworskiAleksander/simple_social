@@ -30,4 +30,11 @@ class Post(models.Model):
         super().save(*args, **kwargs)
 
     # get_absolute_url - where to redirect user once a post has been sent successfuly
-    pass
+    def get_absolute_url(self):
+        return reverse(
+                       "posts:single",
+                       kwargs={
+                               "pk": self.pk,
+                               "username": self.user.username
+                               }
+                       )
