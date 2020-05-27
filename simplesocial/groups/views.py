@@ -14,3 +14,6 @@ class CreateGroup(LoginRequiredMixin, CreateView):
     # directly linked to Group in groups.models.py
     fields = ('name', 'description')
     model = Group
+
+class SingleGroup(DetailView):
+    pass
