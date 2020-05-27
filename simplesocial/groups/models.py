@@ -19,4 +19,7 @@ class Group(models.Model):
     pass
 
 class GroupMember(models.Model):
-    pass
+    group = models.ForeignKey(Group, related_name='memberships')
+    user = models.ForeignKey(User, related_name='user_groups')
+
+    
