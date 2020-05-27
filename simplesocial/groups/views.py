@@ -9,3 +9,8 @@ from django.views.generic import *
 from simplesocial.groups.models import Group, GroupMember
 # Create your views here.
 
+class CreateGroup(LoginRequiredMixin, CreateView):
+    # specify fields used to create new group
+    # directly linked to Group in groups.models.py
+    fields = ('name', 'description')
+    model = Group
