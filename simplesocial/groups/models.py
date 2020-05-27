@@ -17,6 +17,7 @@ register = template.Library()
 # Create your models here.
 class Group(models.Model):
     name = models.CharField(max_lengt=255, unique=True)
+    slug = models.SlugField(allow_unicode=True, unique=True)
 
 class GroupMember(models.Model):
     group = models.ForeignKey(Group, related_name='memberships', on_delete=models.CASCADE)
