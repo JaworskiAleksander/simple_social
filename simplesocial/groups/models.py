@@ -16,11 +16,9 @@ register = template.Library()
 
 # Create your models here.
 class Group(models.Model):
-    pass
+    name = models.CharField(max_lengt=255, unique=True)
 
 class GroupMember(models.Model):
-    group = models.ForeignKey(Group, related_name='memberships')
-    user = models.ForeignKey(User, related_name='user_groups')
 
     def __str__(self):
         return self.user.username
