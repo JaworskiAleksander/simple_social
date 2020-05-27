@@ -38,3 +38,7 @@ class Post(models.Model):
                                "username": self.user.username
                                }
                        )
+
+    class Meta:
+        ordering = ['-created_at']
+        unique_together = ['user', 'message']
