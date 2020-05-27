@@ -17,3 +17,6 @@ register = template.Library()
 # Create your models here.
 class Group(models.Model):
     pass
+
+class GroupMember(models.Model):
+    pass
