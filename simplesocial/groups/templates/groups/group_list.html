@@ -3,9 +3,15 @@
 {% block pregroup %}
 <div class="col-md-4">
     <div class="content">
-        {% if %}
-        {% else %}
-        {% end if%}
+        {% if user.is_authenticated %}
+            <h4>Welcome back!
+                <a href="{% url 'posts:for_user' username=user.username %}">
+                    @{{ user.username }}
+                </a>
+            </h4>
+        {% endif %}
+        <h4>Groups</h4>
+        <p>Welcome to the groups page!</p>
     </div>
 </div>
 {% endblock %}
