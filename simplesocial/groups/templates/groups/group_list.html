@@ -31,7 +31,10 @@
                     {{group.description_html|safe}}
                     <div class="row">
                         <div class="col-md-4">
-                            Group members count: {{ groups.members.count}}
+                            Group members count: {{ group.members.count }}
+                        </div>
+                        <div class="col-md-4">
+                            Group posts count: {{ group.posts.count }}
                         </div>
                     </div>
                 </div>
